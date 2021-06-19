@@ -30,25 +30,24 @@ h3 {
 /*CARD*/
 .card {
   margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
+  border-radius: #262885;
 }
 
 /* FORM */
- .form-label,
+.form-label,
 .form-input,
 .form-textarea {
   display: block;
 }
- 
+
 .form-label {
   font-size: 1.1rem;
   margin: 0 0 0 5px;
 }
 
 .form-input {
-  width: 30%;
-  padding: 3%;
+  width: 20%;
+
   margin: 5px 0;
   font-size: 1.2rem;
-} 
+}
