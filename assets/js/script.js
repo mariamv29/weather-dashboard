@@ -4,7 +4,7 @@ var cityFormEl = document.querySelector("#city-form");
 var nameInputEl = document.querySelector("#city-name");
 var apiKey = "65f5c26cfffe1860cc7a2aca1a96630d"
 
-var apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=524901&lang=fr&appid=" + apiKey;
+var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=austin&appid=" + apiKey;
 
 //formatting the response in the fetch logic 
 fetch(apiUrl)
@@ -16,7 +16,13 @@ fetch(apiUrl)
   
   });
 
-  
+var getCityWeather = function() {
+    console.log("hello");
+}
+getCityWeather();
+
+
+
 //take lat and lon data point from first fetch request to make second api call
 
 
