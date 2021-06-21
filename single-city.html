@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Forecast</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="hero">
+        <h1 class="app-title"><i class="fab fa-weather"></i>Weather Dashboard</h1>
+    </header>
+    <main class="flex-colum min-100-vh">
+        <div id="current-weather" class="list-group">
+     
+        <p>
+           Temp: <span id="temp"></span><br>
+           Wind:  <span id="wind"></span><br>
+           Humidity: <span id="humidity"></span><br>
+           UV Index: <span id="uv-index"></span><br>
+        </p>
+           </div>
+    </main>
+
+    <script src="/assets/js/single-city.js"></script>
+  </body>
 </html>

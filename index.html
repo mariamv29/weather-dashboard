@@ -21,8 +21,8 @@
     <main class="flex-row justify-space-between">
         <div class="card">
             <h3 class="card-header text-uuppercase">Search for a City:</h3>
-            <form id="user-form" class="card-body">
-                <label class="form-label" for="username"></label>
+            <form id="city-form" class="card-body">
+                <label class="form-label" for="cityname"></label>
                 <input
                   name="username"
                   id="username"
@@ -31,8 +31,12 @@
                   class="form-input"
                 />
                 <button type="submit" class="btn">Search</button>
-
     </main>
+    <div class="modal hide" id="cities-found">
+      <ul class="list-group list-group-flish" id="cities-found-list">
+      </ul>
+    </div>
+   
  <script src="assets/js/script.js"></script>
   </body>
 </html>

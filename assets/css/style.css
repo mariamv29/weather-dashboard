@@ -19,6 +19,11 @@ body {
   );
 }
 
+main {
+  margin: 10px auto;
+  width: 94%;
+}
+
 h1 {
   font-size: 40px;
   text-align: center;
@@ -27,12 +32,29 @@ h1 {
 h3 {
   font-size: 30px;
 }
-/*CARD*/
-.card {
-  margin: 0 0 20px 0;
-  border-radius: #262885;
+
+.btn {
+  font-size: 1.3rem;
+  padding: 6px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(88, 152, 211);
 }
 
+.btn:hover {
+  color: white;
+  background-color: rgb(157, 194, 228);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
+}
+
+/*CARD*/
+.card {
+  margin: 0 0 50px 0;
+  border-radius: #262885;
+}
 /* FORM */
 .form-label,
 .form-input,
@@ -40,14 +62,27 @@ h3 {
   display: block;
 }
 
-.form-label {
-  font-size: 1.1rem;
-  margin: 0 0 0 5px;
-}
-
 .form-input {
-  width: 20%;
-
+  width: 100%;
+  padding: 3%;
   margin: 5px 0;
   font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* FLEX CONTENT */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
 }
